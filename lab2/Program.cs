@@ -10,8 +10,7 @@ namespace lab2
     {
         static void Main(string[] args)
         {
-            new Terminal().start();
-
+            Terminal.start();
         }
     }
 }

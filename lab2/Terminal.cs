@@ -6,30 +6,32 @@ using System.Threading.Tasks;
 
 namespace lab2
 {
-    class Terminal
+    static class Terminal
     {
-        private const string EXIT = "exit";
-        private const string HELP = "help";
-        private const string WRONG_INPUT = "Wrong input. If you need help, type 'help'\n";
+        private const string EXIT_ACTION = "exit";
+        private const string HELP_ACTION = "?";
+        private const string WRONG_MESSAGE = "Wrong input. If you need help, type '?'\n";
+        private const string HELP_MESSAGE =
+            "\"?\" - for help\n" +
+            "\"exit\" - for exit\n" +
+            "";
 
 
-        public Terminal()
-        {
-
-        }
-
-        public void start()
+        public static void start()
         {
             while (true)
             {
                 Console.Write(">");
                 string input = Console.ReadLine();
 
-                switch (input.ToLower())
+                if (!String.IsNullOrEmpty(input))
                 {
-                    case EXIT: return;
-                    case HELP: return; //break;
-                    default: Console.WriteLine(WRONG_INPUT); break;
+                    if (EXIT_ACTION.Equals(input))
+                        return;
+                    else if (HELP_ACTION.Equals(input))
+                        Console.WriteLine(HELP_MESSAGE);
+                    else if (!Parser.tryParse(input))
+                        Console.WriteLine(WRONG_MESSAGE);
                 }
             }
         }
