@@ -17,6 +17,13 @@ namespace lab2
                 m_matrix[i] = new double[cols];
         }
 
+        public Matrix(double[,] arr) : this((arr.GetUpperBound(0) + 1), (arr.GetUpperBound(1) + 1) )
+        {
+            for (int i = 0; i < (arr.GetUpperBound(0) + 1); i++)
+                for (int j = 0; j < (arr.GetUpperBound(1) + 1); j++)
+                    m_matrix[i][j] = arr[i, j];       
+        }
+
         public Matrix(double[][] other) : this(other.Length, other[0].Length)
         {
             for (int i = 0; i < other.Length; i++)
@@ -30,8 +37,18 @@ namespace lab2
 
         // доступ к элементам матрицы через свойство-индексатор: 
         public double this[int i, int j] {
-            get { return m_matrix[i - 1][j - 1]; }
-            set { m_matrix[i - 1][j - 1] = value; }
+            get {
+                if ((i < 0 || i >= this.Rows) || (j < 0 || j >= this.Columns))
+                    throw new FormatException();
+
+                return m_matrix[i - 1][j - 1];
+            }
+            set {
+                if ((i < 0 || i >= this.Rows) || (j < 0 || j >= this.Columns))
+                    throw new FormatException();
+
+                m_matrix[i - 1][j - 1] = value;
+            }
         }
 
         // Является ли матрица квадратной 
@@ -95,8 +112,12 @@ namespace lab2
         // стандартные матричные операции через перегрузку операторов: 
         public static Matrix operator +(Matrix m1, Matrix m2)
         {
-            if (m1 == null || m2 == null) return null;
-            if (m1.Rows != m2.Rows || m1.Columns != m2.Columns) return null;
+            if (m1 == null || m2 == null)
+                throw new FormatException();
+
+            if (m1.Rows != m2.Rows || m1.Columns != m2.Columns)
+                throw new FormatException();
+
             Matrix m3 = new Matrix(m1.Rows, m1.Columns);
 
             for (int i = 0; i < m1.Rows; i++)
@@ -108,8 +129,12 @@ namespace lab2
 
         public static Matrix operator -(Matrix m1, Matrix m2)
         {
-            if (m1 == null || m2 == null) return null;
-            if (m1.Rows != m2.Rows || m1.Columns != m2.Columns) return null;
+            if (m1 == null || m2 == null)
+                throw new FormatException();
+
+            if (m1.Rows != m2.Rows || m1.Columns != m2.Columns)
+                throw new FormatException();
+
             Matrix m3 = new Matrix(m1.Rows, m1.Columns);
 
             for (int i = 0; i < m1.Rows; i++)
@@ -121,7 +146,9 @@ namespace lab2
         
         public static Matrix operator *(Matrix m1, double d)
         {
-            if (m1 == null) return null;
+            if (m1 == null)
+                throw new FormatException();
+
             Matrix m3 = new Matrix(m1.Rows, m1.Columns);
 
             for (int i = 0; i < m1.Rows; i++)
@@ -133,8 +160,11 @@ namespace lab2
 
         public static Matrix operator *(Matrix m1, Matrix m2)
         {
-            if (m1 == null || m2 == null) return null; // throw new exception
-            if (m1.Columns != m2.Rows) return null;  // throw new exception
+            if (m1 == null || m2 == null)
+                throw new FormatException();
+
+            if (m1.Columns != m2.Rows)
+                throw new FormatException();
 
             Matrix m3 = new Matrix(m1.Rows, m2.Columns);
 
@@ -147,12 +177,7 @@ namespace lab2
         }
 
         // оператор преобразования типов: 
-        public static explicit operator Matrix(double[,] arr)
-        {
-            
-            return new Matrix(1, 1);
-        }
-
+        public static explicit operator Matrix(double[,] arr) { return new Matrix(arr); }
 
         // транспонирование матрицы    
         public Matrix Transpose()
@@ -170,7 +195,8 @@ namespace lab2
         public double Trace()
         {
             // След матрицы — это сумма элементов главной диагонали матрицы
-            if (!this.IsSquared) return 0; // throw exception
+            if (!this.IsSquared)
+                throw new FormatException();
 
             double sum = 0;
             for (int i = 0; i < this.Rows; i++)
@@ -246,9 +272,7 @@ namespace lab2
                 matrix[i] = new double[elements.Length];
 
                 for (int j = 0; j < rows.Length; j++)
-                {
                     matrix[i][j] = Double.Parse(elements[j]);
-                }
             }
 
             return new Matrix(matrix);
@@ -268,7 +292,6 @@ namespace lab2
                 return false;
             }
         }
-
 
 
     }
