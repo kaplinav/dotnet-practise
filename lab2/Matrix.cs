@@ -8,6 +8,8 @@ namespace lab2
 {
     class Matrix
     {
+        private const char SPACE = ' ';
+        private static char[] delimeters = { SPACE };
         private double[][] m_matrix;
 
         public Matrix(int rows, int cols)
@@ -41,13 +43,13 @@ namespace lab2
                 if ((i < 0 || i >= this.Rows) || (j < 0 || j >= this.Columns))
                     throw new FormatException();
 
-                return m_matrix[i - 1][j - 1];
+                return m_matrix[i][j];
             }
             set {
                 if ((i < 0 || i >= this.Rows) || (j < 0 || j >= this.Columns))
                     throw new FormatException();
 
-                m_matrix[i - 1][j - 1] = value;
+                m_matrix[i][j] = value;
             }
         }
 
@@ -173,7 +175,7 @@ namespace lab2
                     for (int k = 0; k < m2.Rows; k++)
                         m3[i, j] += m1[i, k] * m2[k, j];
 
-            return new Matrix(1, 1);
+            return m3;
         }
 
         // оператор преобразования типов: 
@@ -247,7 +249,7 @@ namespace lab2
             return m;
         }
 
-        // создания матрицы по строчке в определенном формате.
+        // создание матрицы по строчке в определенном формате.
         public static Matrix Parse(string s)
         {
             // Метод Parse должен генерировать исключение FormatException, если формат некорректный.
@@ -255,24 +257,32 @@ namespace lab2
             if (String.IsNullOrWhiteSpace(s))
                 throw new FormatException();
 
-            string[] rows = s.Split(',');
+            // кол-во элементов = кол-во строк будущей матрицы
+            string[] matrixRows = s.Split(',');
+            int rows = matrixRows.Length;
 
-            if (rows.Length == 0)
+            if (rows == 0)
                 throw new FormatException();
 
-            double[][] matrix = new double[rows.Length][];
-
-            for (int i = 0; i < rows.Length; i++)
+            double[][] matrix = new double[rows][];
+            for (int i = 0; i < rows; i++)
             {
-                string[] elements = rows[i].Split(' ');
+                
+                // кол-во элементов = кол-во столбцов будущей матрицы
+                string[] matrixElements = matrixRows[i].Trim(SPACE).Split(delimeters, StringSplitOptions.RemoveEmptyEntries);
+                int columns = matrixElements.Length;
 
-                if (elements.Length == 0)
+                // исключение, если количество элементов в текущей строке не совпадает с предыдущей
+                if (i > 0)
+                    if (matrix[0].Length != columns)
+                        throw new FormatException();
+
+                if (columns == 0)
                     throw new FormatException();
 
-                matrix[i] = new double[elements.Length];
-
-                for (int j = 0; j < rows.Length; j++)
-                    matrix[i][j] = Double.Parse(elements[j]);
+                matrix[i] = new double[columns];
+                for (int j = 0; j < columns; j++)
+                    matrix[i][j] = Double.Parse(matrixElements[j]);
             }
 
             return new Matrix(matrix);
