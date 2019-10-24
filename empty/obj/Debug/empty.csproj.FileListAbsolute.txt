@@ -1,7 +1,0 @@
-C:\home\university\3 semester\source\dotnet-practise\empty\bin\Debug\empty.exe.config
-C:\home\university\3 semester\source\dotnet-practise\empty\bin\Debug\empty.exe
-C:\home\university\3 semester\source\dotnet-practise\empty\bin\Debug\empty.pdb
-C:\home\university\3 semester\source\dotnet-practise\empty\obj\Debug\empty.csprojAssemblyReference.cache
-C:\home\university\3 semester\source\dotnet-practise\empty\obj\Debug\empty.csproj.CoreCompileInputs.cache
-C:\home\university\3 semester\source\dotnet-practise\empty\obj\Debug\empty.exe
-C:\home\university\3 semester\source\dotnet-practise\empty\obj\Debug\empty.pdb
