@@ -21,10 +21,9 @@ namespace lab3
         private static SolidBrush m_lineBrush = new SolidBrush(Color.Black);
         //
         // for auto move
-        public static int Speed { set; get; } = 1;
         public static bool IsRandomMove { set; get; } = false;
         private static int m_dy = 0;
-        private static int m_dx = Speed;
+        private static int m_dx = 1;
 
 
 
@@ -177,14 +176,31 @@ namespace lab3
 
         public static void ChangeDirect(Keys key)
         {
-            m_dy = m_dx = 0;
             switch (key)
             {
-                case Keys.Up: m_dy = -Speed; break;
-                case Keys.Down: m_dy = Speed; break;
-                case Keys.Left: m_dx = -Speed; break;
-                case Keys.Right: m_dx = Speed; break;
+                case Keys.Up: m_dy--; break;
+                case Keys.Down: m_dy++; break;
+                case Keys.Left: m_dx--; break;
+                case Keys.Right: m_dx++; break;
             }
+        }
+
+        // moving speed Plus
+        public static void speedAdd()
+        {
+            if (m_dy != 0)
+                m_dy = (m_dy > 0) ? ++m_dy : --m_dy;   
+            if (m_dx != 0)
+                m_dx = (m_dx > 0) ? ++m_dx : --m_dx;
+        }
+
+        // moving speed Minus
+        public static void speedSub()
+        {
+            if (m_dy != 0)
+                m_dy = (m_dy < 0) ? ++m_dy : --m_dy;
+            if (m_dx != 0)
+                m_dx = (m_dx < 0) ? ++m_dx : --m_dx;
         }
 
         private static void RandomMove (Size size)
@@ -217,11 +233,6 @@ namespace lab3
                 return;
             }
             
-            if (Math.Abs(m_dx) != 0)
-                m_dx = m_dx < 0 ? -Speed : Speed;
-            if (Math.Abs(m_dy) != 0)
-                m_dy = m_dy < 0 ? -Speed : Speed;
-
             // https: //stackoverflow. com /questions/30554883/windows-forms-sizes-not-matching
             if ( (GetExtremeTopY() + m_dy) < 45 || (GetExtremeDownY() + m_dy) > (size.Height - 30))
                 m_dy = -m_dy;

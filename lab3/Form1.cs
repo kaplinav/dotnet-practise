@@ -226,11 +226,11 @@ namespace lab3
                     break;
                 case Keys.OemMinus:
                 case Keys.Subtract:
-                    Painter.Speed = Painter.Speed == 1 ? 1 : --Painter.Speed;
+                    Painter.speedSub();
                     break;
                 case Keys.Oemplus:
                 case Keys.Add:
-                    Painter.Speed++;
+                    Painter.speedAdd();
                     break;
             }
             Refresh();
