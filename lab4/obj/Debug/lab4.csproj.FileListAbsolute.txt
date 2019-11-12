@@ -1,0 +1,13 @@
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.Form1.resources
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.FormAdd.resources
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.Options.resources
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.Properties.Resources.resources
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.Statistics.resources
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.csproj.CoreCompileInputs.cache
+C:\home\university\3 semester\source\dotnet-practise\lab4\bin\Debug\lab4.exe.config
+C:\home\university\3 semester\source\dotnet-practise\lab4\bin\Debug\lab4.exe
+C:\home\university\3 semester\source\dotnet-practise\lab4\bin\Debug\lab4.pdb
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.exe
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.pdb
+C:\home\university\3 semester\source\dotnet-practise\lab4\obj\Debug\lab4.csprojAssemblyReference.cache

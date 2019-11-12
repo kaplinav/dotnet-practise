@@ -1,0 +1,13 @@
+class Card
+    {
+        public string Word { get; private set; } = "";
+        public string Translate { get; private set; } = "";
+        public string partOfSpeech { get; private set; } = "";
+
+        public Card(string word, string translate, string partOfSpeech)
+        {
+            this.Word = word;
+            this.Translate = translate;
+            this.partOfSpeech = partOfSpeech;
+        }
+    }

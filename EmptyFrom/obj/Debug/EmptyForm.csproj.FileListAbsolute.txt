@@ -1,0 +1,9 @@
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\bin\Debug\EmptyFrom.exe.config
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\bin\Debug\EmptyFrom.exe
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\bin\Debug\EmptyFrom.pdb
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyForm.csprojAssemblyReference.cache
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyFrom.Properties.Resources.resources
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyForm.csproj.GenerateResource.cache
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyForm.csproj.CoreCompileInputs.cache
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyFrom.exe
+C:\home\university\3 semester\source\dotnet-practise\EmptyFrom\obj\Debug\EmptyFrom.pdb

@@ -297,7 +297,7 @@ namespace lab2
             {
                 m = Matrix.Parse(s);
                 return true;
-            } catch (FormatException e)
+            } catch (FormatException)
             {
                 return false;
             }
