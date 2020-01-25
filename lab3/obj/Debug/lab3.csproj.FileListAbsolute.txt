@@ -1,13 +1,3 @@
-C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe.config
-C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe
-C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.pdb
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csprojAssemblyReference.cache
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.Form1.resources
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.Properties.Resources.resources
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.GenerateResource.cache
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.exe
-C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.pdb
 C:\home\university\3 semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe.config
 C:\home\university\3 semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe
 C:\home\university\3 semester\source\dotnet-practise\lab3\bin\Debug\lab3.pdb
@@ -19,3 +9,14 @@ C:\home\university\3 semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.
 C:\home\university\3 semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
 C:\home\university\3 semester\source\dotnet-practise\lab3\obj\Debug\lab3.exe
 C:\home\university\3 semester\source\dotnet-practise\lab3\obj\Debug\lab3.pdb
+C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe.config
+C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.exe
+C:\home\university\3_semester\source\dotnet-practise\lab3\bin\Debug\lab3.pdb
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csprojAssemblyReference.cache
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.Form1.resources
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.FormOptions.resources
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.Properties.Resources.resources
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.GenerateResource.cache
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.exe
+C:\home\university\3_semester\source\dotnet-practise\lab3\obj\Debug\lab3.pdb

@@ -1,0 +1,10 @@
+C:\home\university\3_semester\source\dotnet-practise\lab5\bin\Debug\lab5.exe.config
+C:\home\university\3_semester\source\dotnet-practise\lab5\bin\Debug\lab5.exe
+C:\home\university\3_semester\source\dotnet-practise\lab5\bin\Debug\lab5.pdb
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.Form1.resources
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.Properties.Resources.resources
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.csproj.GenerateResource.cache
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.exe
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.pdb
+C:\home\university\3_semester\source\dotnet-practise\lab5\obj\Debug\lab5.csprojAssemblyReference.cache

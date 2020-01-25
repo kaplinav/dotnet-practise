@@ -12,3 +12,9 @@ C:\home\university\3 semester\source\dotnet-practise\lab1\obj\Debug\lab1.csproj.
 C:\home\university\3 semester\source\dotnet-practise\lab1\obj\Debug\lab1.exe
 C:\home\university\3 semester\source\dotnet-practise\lab1\obj\Debug\lab1.pdb
 C:\home\university\3 semester\source\dotnet-practise\lab1\obj\Debug\lab1.csprojAssemblyReference.cache
+C:\home\university\3_semester\source\dotnet-practise\lab1\bin\Debug\lab1.exe.config
+C:\home\university\3_semester\source\dotnet-practise\lab1\bin\Debug\lab1.exe
+C:\home\university\3_semester\source\dotnet-practise\lab1\bin\Debug\lab1.pdb
+C:\home\university\3_semester\source\dotnet-practise\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\home\university\3_semester\source\dotnet-practise\lab1\obj\Debug\lab1.exe
+C:\home\university\3_semester\source\dotnet-practise\lab1\obj\Debug\lab1.pdb

@@ -280,7 +280,7 @@ namespace lab4
 
                 lengthSum += item.Key.Length;
             }
-
+            // exception if we click statistic when app is started
             AVGLength = lengthSum / engRus.Count;
         }
 

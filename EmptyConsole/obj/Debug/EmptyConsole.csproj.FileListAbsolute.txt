@@ -1,6 +1,0 @@
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\bin\Debug\EmptyConsole.exe.config
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\bin\Debug\EmptyConsole.exe
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\bin\Debug\EmptyConsole.pdb
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\obj\Debug\EmptyConsole.csproj.CoreCompileInputs.cache
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\obj\Debug\EmptyConsole.exe
-C:\home\university\3 semester\source\dotnet-practise\EmptyConsole\obj\Debug\EmptyConsole.pdb
