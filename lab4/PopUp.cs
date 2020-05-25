@@ -10,7 +10,7 @@ namespace lab4
 {
     public static class PopUp
     {
-        private const int INDENT_BOTTOM = 55;
+        private const int INDENT_BOTTOM = 70; //55;
         private const float FONT_SIZE = 9;
         private const string FONT_NAME = "Microsoft Sans Serif";
 
